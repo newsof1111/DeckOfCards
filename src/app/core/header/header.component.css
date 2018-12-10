@@ -1,0 +1,17 @@
+.bd-navbar {
+  background-color: #cdd800;
+}
+a{
+  cursor: pointer;
+}
+.logo{
+  width: 84px;
+  height: auto;
+}
+
+a:hover {
+  color: #309ad4 !important;
+}
+.active {
+  color: #309ad4 !important;
+}

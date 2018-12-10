@@ -1,0 +1,12 @@
+
+<img *ngIf=" Card ;else NoCard"
+     [src]="BackFace?BackFacePicture:Card.picture"
+  alt="{{ Card.Rank }} {{ Card.Suit }}"
+  class="CardImg">
+
+<ng-template #NoCard>
+  <img
+       [src]="NullPicture"
+       alt=""
+       class="CardImg">
+</ng-template>

@@ -1,0 +1,48 @@
+.PresentationContainer{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.CoverPicture{
+  width:100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* smaller phone viewpoints */
+@media all and (min-width: 320px) {
+  .CoverPicture,.PresentationContainer{
+    width:100%;
+  }
+}
+
+/* small devices and most phones */
+@media all and (min-width: 480px) {
+  .CoverPicture,.PresentationContainer{
+    width:80%;
+  }
+}
+
+/* most tablets */
+@media all and (min-width: 768px) {
+  .CoverPicture,.PresentationContainer{
+    width:60%;
+  }
+}
+
+/* smaller desktop viewpoints */
+@media all and (min-width: 992px) {
+  .CoverPicture,.PresentationContainer{
+    width:50%;
+  }
+
+}
+
+/* large devices and wide screens */
+@media all and (min-width: 1200px) {
+  .CoverPicture,.PresentationContainer{
+    width:40%;
+  }
+}

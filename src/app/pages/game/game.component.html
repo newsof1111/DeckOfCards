@@ -1,0 +1,25 @@
+<div class="row table">
+  <div class="col-12 " >
+    <app-cards-ui
+      [Cards] = "Cards"
+      [BackFace]="true"
+      [BackFacePicture]="BackFacePicture"
+      [NullPicture]="NullPicture"
+    ></app-cards-ui>
+  </div>
+  <div class="col-12 ">
+    <app-card-ui class="selectedCard"
+      [Card]="SelectedCard"
+      [BackFace]="false"
+      [NullPicture]="NullPicture"
+
+    ></app-card-ui>
+  </div>
+</div>
+<div class="buttonActionContainer text-center">
+
+  <button type="button" class="btn btn-outline-light  " id="ShuffleButton" (click)="Shuffle()"> {{'GAME_PAGE_SHUFFLE' | translate }}</button>
+  <button type="button" class="btn btn-outline-light  " id="GetCardButton" (click)="GetCard()"> {{'GAME_PAGE_DEAL_ONE_CARD' | translate }}</button>
+  <button type="button" class="btn btn-outline-light  " id="ResetButton" (click)="Reset()"> {{'GAME_PAGE_RESET' | translate }}</button>
+
+</div>

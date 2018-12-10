@@ -1,0 +1,36 @@
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar ">
+  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+    <img  class="logo" src="assets/imgs/logo.png">
+  </a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link " id="WelcomeLink" routerLinkActive="active" routerLink="/Welcome"> {{'WELLCOME_PAGE_TITLE' | translate }} </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " id="GameLink" routerLinkActive="active" routerLink="/game" > {{'GAME_PAGE_TITLE' | translate }} </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto  d-md-flex">
+
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle "  appDropdown  >
+        <ng-container [ngSwitch]="currentLanguage">
+          <ng-container *ngSwitchCase="'fr'" > Français </ng-container>
+          <ng-container *ngSwitchCase="'en'" > English </ng-container>
+        </ng-container>
+        <div class="dropdown-menu dropdown-menu-right"  >
+          <a class="dropdown-item " *ngIf="currentLanguage != 'en' "  (click)="ChangeLang('en')">English</a>
+          <a class="dropdown-item " *ngIf="currentLanguage != 'fr' " (click)="ChangeLang('fr')">Français</a>
+        </div>
+      </a>
+    </li>
+
+
+  </ul>
+
+</header>

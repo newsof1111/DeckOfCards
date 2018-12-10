@@ -1,0 +1,58 @@
+.table{
+  padding: 20px;
+  width: initial;
+  margin: auto;
+  margin-top: 100px;
+
+}
+.selectedCard{
+    float: right;
+}
+.buttonActionContainer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ced800;
+  padding: 29px;
+}
+
+
+
+
+
+/* smaller phone viewpoints */
+@media all and (min-width: 320px) {
+  .table{
+    margin-top: 100px;
+  }
+}
+
+/* small devices and most phones */
+@media all and (min-width: 480px) {
+  .table{
+    margin-top: 90px;
+  }
+}
+
+/* most tablets */
+@media all and (min-width: 768px) {
+  .table{
+    margin-top: 80px;
+  }
+}
+
+/* smaller desktop viewpoints */
+@media all and (min-width: 992px) {
+  .table{
+    margin-top: 0px;
+  }
+
+}
+
+/* large devices and wide screens */
+@media all and (min-width: 1200px) {
+  .table{
+    margin-top: 0px;
+  }
+
+}

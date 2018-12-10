@@ -1,0 +1,42 @@
+.CardImg{
+  width:50px;
+}
+
+/* smaller phone viewpoints */
+@media all and (min-width: 320px) {
+  .CardImg{
+    width:50px;
+  }
+
+}
+
+
+
+/* small devices and most phones */
+@media all and (min-width: 480px) {
+  .CardImg{
+    width:100px;
+  }
+}
+
+/* most tablets */
+@media all and (min-width: 768px) {
+  .CardImg{
+    width:200px;
+  }
+}
+
+/* smaller desktop viewpoints */
+@media all and (min-width: 992px) {
+  .CardImg{
+    width:300px;
+  }
+
+}
+
+/* large devices and wide screens */
+@media all and (min-width: 1200px) {
+  .CardImg{
+    width:300px;
+  }
+}
